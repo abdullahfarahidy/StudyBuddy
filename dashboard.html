@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyBuddy Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Wrapper -->
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-blue-600 text-white px-6 py-8 space-y-6">
+      <h1 class="text-2xl font-bold">StudyBuddy</h1>
+      <nav class="space-y-4">
+        <a href="#" class="block hover:underline">Dashboard</a>
+        <a href="#" class="block hover:underline">My Tasks</a>
+        <a href="#" class="block hover:underline">Study Groups</a>
+        <a href="#" class="block hover:underline">Notes</a>
+        <a href="#" class="block hover:underline">Progress</a>
+        <a href="#" class="block hover:underline">Settings</a>
+        <a href="#" class="block text-red-300 hover:text-white">Log Out</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      
+      <!-- Top Bar -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Dashboard</h2>
+        <div class="flex items-center space-x-4">
+          <span class="text-gray-700">Hi, Alex</span>
+          <img src="https://i.pravatar.cc/40" alt="User Avatar" class="rounded-full w-10 h-10">
+        </div>
+      </div>
+
+      <!-- Overview Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <h3 class="text-xl font-semibold mb-2">12 Tasks</h3>
+          <p class="text-gray-500">Pending Assignments</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <h3 class="text-xl font-semibold mb-2">3 Groups</h3>
+          <p class="text-gray-500">Active Study Groups</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <h3 class="text-xl font-semibold mb-2">74%</h3>
+          <p class="text-gray-500">Weekly Progress</p>
+        </div>
+      </div>
+
+      <!-- Main Sections -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- Calendar Placeholder -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-lg font-semibold mb-4">Study Calendar</h3>
+          <div class="h-64 bg-gray-100 rounded flex items-center justify-center text-gray-400">
+            Calendar Widget (Coming Soon)
+          </div>
+        </div>
+
+        <!-- Tasks Section -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-lg font-semibold mb-4">Today’s Tasks</h3>
+          <ul class="space-y-3">
+            <li class="flex justify-between items-center">
+              <span>✔️ Review Algorithms Lecture</span>
+              <button class="text-sm text-blue-500 hover:underline">Done</button>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>📝 Finish Math Homework</span>
+              <button class="text-sm text-blue-500 hover:underline">Mark Done</button>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>📖 Read Chapter 5 – Chemistry</span>
+              <button class="text-sm text-blue-500 hover:underline">Mark Done</button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
